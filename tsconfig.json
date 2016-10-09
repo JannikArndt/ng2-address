@@ -1,19 +1,29 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "system",
-    "moduleResolution": "node",
+    "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "declaration": true,
-    "outFile": "./lib/ng2-address.js"
-  },
-  "files": [
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist/out-tsc",
+    "outFile": "dist/ng2-address.js",
+    "sourceMap": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ]},
+    "files": [
     "./typings/index.d.ts",
-    "./src/address-auto-completer.module.ts"
+    "./src/address-autocompleter.module.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ],
-  "compileOnSave": false
+    "exclude": [ // for gulp
+      "node_modules",
+      "example",
+      "example2",
+      "typings"
+    ]
 }
