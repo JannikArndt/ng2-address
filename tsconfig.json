@@ -10,7 +10,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "dist/out-tsc",
-    "outFile": "dist/ng2-address.js",
     "sourceMap": true,
     "target": "es5",
     "typeRoots": [
@@ -23,7 +22,6 @@
     "exclude": [ // for gulp
       "node_modules",
       "example",
-      "example2",
-      "typings"
+      "example2"
     ]
 }
